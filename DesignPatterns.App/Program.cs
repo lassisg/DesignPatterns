@@ -3,10 +3,10 @@
 Console.WriteLine("Starting Pattern tests");
 
 Console.WriteLine("Creational patterns tests");
-Creational.AbstractFactory();
+Creational.RunAbstractFactoryExample();
 
-Console.WriteLine("Structural patterns tests");
-
-Console.WriteLine("Behavioral patterns tests");
+// Console.WriteLine("Structural patterns tests");
+//
+// Console.WriteLine("Behavioral patterns tests");
 
 Console.ReadLine();
