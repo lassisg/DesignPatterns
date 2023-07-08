@@ -4,26 +4,26 @@ public class MazeGame
 {
     public Maze Maze { get; set; }
     
-    public void CreateMaze()
+    public Maze CreateMaze()
     {
-        var aMaze = new Maze();
-        var r1 = new Room(1);
-        var r2 = new Room(2);
-        var theDoor = new Door(r1, r2);
+        var maze = new Maze();
+        var room1 = new Room(1);
+        var room2 = new Room(2);
+        var door = new Door(room1, room2);
         
-        aMaze.AddRoom(r1);
-        aMaze.AddRoom(r2);
+        maze.AddRoom(room1);
+        maze.AddRoom(room2);
         
-        r1.SetSide(DirectionEnum.North, new Wall());
-        r1.SetSide(DirectionEnum.East, theDoor);
-        r1.SetSide(DirectionEnum.South, new Wall());
-        r1.SetSide(DirectionEnum.West, new Wall());
+        room1.SetSide(DirectionEnum.North, new Wall());
+        room1.SetSide(DirectionEnum.East, door);
+        room1.SetSide(DirectionEnum.South, new Wall());
+        room1.SetSide(DirectionEnum.West, new Wall());
         
-        r2.SetSide(DirectionEnum.North, new Wall());
-        r2.SetSide(DirectionEnum.East, new Wall());
-        r2.SetSide(DirectionEnum.South, new Wall());
-        r2.SetSide(DirectionEnum.West, theDoor);
+        room2.SetSide(DirectionEnum.North, new Wall());
+        room2.SetSide(DirectionEnum.East, new Wall());
+        room2.SetSide(DirectionEnum.South, new Wall());
+        room2.SetSide(DirectionEnum.West, door);
         
-        Maze = aMaze;
+        return maze;
     }
 }
