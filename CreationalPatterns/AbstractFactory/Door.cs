@@ -9,10 +9,7 @@ public class Door : MapSite
     public Door(Room room1, Room room2)
         => (Room1, Room2 ) = (room1, room2 );
 
-    public virtual void Enter()
-    {
-        IsOpen = true;
-    }
+    public virtual void Enter() { }
 
     public Room OtherSideFrom(Room room)
     {

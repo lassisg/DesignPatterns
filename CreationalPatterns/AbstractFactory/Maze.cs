@@ -7,7 +7,7 @@ public class Maze
     public void AddRoom(Room room) 
         => Rooms.Add(room);
     
-    public Room RoomNb(int roomNb) 
-        => new Room(roomNb);
+    public Room RoomNb(int roomNumber) 
+        => Rooms.FirstOrDefault(x => x.RoomNumber == roomNumber);
     
 }

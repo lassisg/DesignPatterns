@@ -28,5 +28,7 @@ public class Room : MapSite
         
         Sides.Add(direction, mapSite);
     }
+
+    public virtual void Enter() { }
     
 }
