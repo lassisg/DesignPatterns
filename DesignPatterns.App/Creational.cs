@@ -1,4 +1,4 @@
-using CreationalPatterns.AbstractFactory;
+using CreationalPatterns.BaseCode;
 
 namespace DesignPatterns.App;
 
@@ -12,7 +12,7 @@ public static class Creational
         Console.WriteLine("Abstract Factory pattern tests");
 
         var game = new MazeGame();
-        game.CreateMaze();
+        Maze maze = game.CreateMaze();
         Console.ReadLine();
     } 
 }

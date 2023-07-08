@@ -1,4 +1,4 @@
-﻿namespace CreationalPatterns.AbstractFactory;
+﻿namespace CreationalPatterns.BaseCode;
 
 public class MazeGame
 {

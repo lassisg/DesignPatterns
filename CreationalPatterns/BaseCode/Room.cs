@@ -1,4 +1,4 @@
-﻿namespace CreationalPatterns.AbstractFactory;
+﻿namespace CreationalPatterns.BaseCode;
 
 public class Room : MapSite
 {
@@ -28,5 +28,7 @@ public class Room : MapSite
         
         Sides.Add(direction, mapSite);
     }
+
+    public virtual void Enter() { }
     
 }
