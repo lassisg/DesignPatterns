@@ -14,3 +14,12 @@ As I believe that knowledge should be shared, although I don't expect that much 
 As mentioned, this book is a must read. As I haven't already read it, I didn't even bother to search for C# implementations of the examples.
 **The idea is to learn by coding.**
 
+As I go through the patterns, I'll add them to the list bellow, in no particular order.
+
+For each group of patterns (by purpose as the book), there will be an introduction with a starting point code implementation.
+
+I won't delete those, because they might be useful for comparison with the final code of each pattern.
+
+## Creational Patterns
+
+### Abstract Factory
