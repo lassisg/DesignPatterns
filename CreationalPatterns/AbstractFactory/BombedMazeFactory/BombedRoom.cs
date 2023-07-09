@@ -1,24 +1,24 @@
 ﻿using CreationalPatterns.Common;
 using CreationalPatterns.Common.Interfaces;
 
-namespace CreationalPatterns.BaseCode;
+namespace CreationalPatterns.AbstractFactory.BombedMazeFactory;
 
 /// <summary>
 /// <para>Concrete product.</para>
-/// Defines a Room (product object) to be created by the corresponding factory.
+/// Defines a BombedRoom (product object) to be created by the corresponding factory.
 /// <para>Implements the IRoom (AbstractProduct) interface.</para>
 /// </summary>
-public class Room : IRoom
+public class BombedRoom : IRoom
 {
     public int RoomNumber { get; set; }
-    public Dictionary<DirectionEnum, IMapSite> Sides { get; set; } = new();
+    public Dictionary<DirectionEnum, IMapSite>? Sides { get; set; }
 
-    public Room(int roomNumber) 
+    public BombedRoom(int roomNumber)
         => RoomNumber = roomNumber;
-
+    
     public IMapSite GetSide(DirectionEnum direction)
     {
-        if (!Sides.ContainsKey(direction))
+        if (!Sides!.ContainsKey(direction))
             throw new InvalidDataException($"The side { direction.ToString() } is not set.");
 
         IMapSite side = Sides.First(x => x.Key == direction).Value;
@@ -28,7 +28,7 @@ public class Room : IRoom
 
     public void SetSide(DirectionEnum direction, IMapSite mapSite)
     {
-        if (Sides.Count is 4) 
+        if (Sides!.Count is 4) 
             throw new InvalidDataException("There are no more sides available.");
 
         if (Sides.ContainsKey(direction))
@@ -38,5 +38,4 @@ public class Room : IRoom
     }
 
     public void Enter() { }
-    
 }

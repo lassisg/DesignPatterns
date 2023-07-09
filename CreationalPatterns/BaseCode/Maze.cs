@@ -1,13 +1,21 @@
-﻿namespace CreationalPatterns.BaseCode;
+﻿using CreationalPatterns.Common;
+using CreationalPatterns.Common.Interfaces;
 
-public class Maze
+namespace CreationalPatterns.BaseCode;
+
+/// <summary>
+/// <para>Concrete product.</para>
+/// Defines a Maze (product object) to be created by the corresponding factory.
+/// <para>Implements the IMaze (AbstractProduct) interface.</para>
+/// </summary>
+public class Maze : IMaze
 {
-    public List<Room> Rooms { get; set; } = new();
+    public List<IRoom> Rooms { get; set; } = new();
 
-    public void AddRoom(Room room) 
+    public void AddRoom(IRoom room) 
         => Rooms.Add(room);
     
-    public Room RoomNb(int roomNumber) 
-        => Rooms.FirstOrDefault(x => x.RoomNumber == roomNumber);
+    public IRoom RoomNb(int roomNumber) 
+        => Rooms.FirstOrDefault(x => x.RoomNumber == roomNumber)!;
     
 }

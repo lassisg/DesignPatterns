@@ -1,8 +1,16 @@
-﻿namespace CreationalPatterns.BaseCode;
+﻿using CreationalPatterns.Common.Interfaces;
 
-public class Wall : MapSite
+namespace CreationalPatterns.BaseCode;
+
+/// <summary>
+/// <para>Concrete product.</para>
+/// Defines a Wall (product object) to be created by the corresponding factory.
+/// <para>Implements the IWall (AbstractProduct) interface.</para>
+/// </summary>
+public class Wall : IWall
 {
-    public Wall() { }
+    public string? Material { get; set; }
 
-    public virtual void Enter() { }
+    public Wall() { }
+    public void Enter() { }
 }

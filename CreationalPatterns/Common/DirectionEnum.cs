@@ -1,4 +1,4 @@
-﻿namespace CreationalPatterns.BaseCode;
+﻿namespace CreationalPatterns.Common;
 
 public enum DirectionEnum
 {

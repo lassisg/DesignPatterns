@@ -1,8 +1,10 @@
-﻿namespace CreationalPatterns.BaseCode;
+﻿using CreationalPatterns.Common;
 
-public class MazeGame
+namespace CreationalPatterns.BaseCode;
+
+public class MazeGameBase
 {
-    public Maze Maze { get; set; }
+    public Maze? Maze { get; set; }
     
     public Maze CreateMaze()
     {

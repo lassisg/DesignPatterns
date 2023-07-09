@@ -1,20 +1,21 @@
 ﻿using CreationalPatterns.Common;
 using CreationalPatterns.Common.Interfaces;
 
-namespace CreationalPatterns.BaseCode;
+namespace CreationalPatterns.AbstractFactory.EnchantedMazeFactory;
 
 /// <summary>
 /// <para>Concrete product.</para>
-/// Defines a Room (product object) to be created by the corresponding factory.
+/// Defines a EnchantedRoom (product object) to be created by the corresponding factory.
 /// <para>Implements the IRoom (AbstractProduct) interface.</para>
 /// </summary>
-public class Room : IRoom
+public class EnchantedRoom : IRoom
 {
     public int RoomNumber { get; set; }
+    public ISpell Spell { get; set; }
     public Dictionary<DirectionEnum, IMapSite> Sides { get; set; } = new();
 
-    public Room(int roomNumber) 
-        => RoomNumber = roomNumber;
+    public EnchantedRoom(int roomNumber, ISpell spell) 
+        => (RoomNumber, Spell) = (roomNumber, spell);
 
     public IMapSite GetSide(DirectionEnum direction)
     {

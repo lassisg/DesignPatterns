@@ -1,6 +1,13 @@
-﻿namespace CreationalPatterns.BaseCode;
+﻿using CreationalPatterns.Common.Interfaces;
 
-public class MapSite
+namespace CreationalPatterns.BaseCode;
+
+/// <summary>
+/// <para>Concrete product.</para>
+/// Defines a MapSite (product object) to be created by the corresponding factory.
+/// <para>Implements the IMapSite (AbstractProduct) interface.</para>
+/// </summary>
+public class MapSite : IMapSite
 {
-    public virtual void Enter() { }
+    public void Enter() { }
 }
