@@ -11,7 +11,7 @@ namespace CreationalPatterns.AbstractFactory.BombedMazeFactory;
 public class BombedRoom : IRoom
 {
     public int RoomNumber { get; set; }
-    public Dictionary<DirectionEnum, IMapSite>? Sides { get; set; }
+    public Dictionary<DirectionEnum, IMapSite>? Sides { get; set; } = new();
 
     public BombedRoom(int roomNumber)
         => RoomNumber = roomNumber;

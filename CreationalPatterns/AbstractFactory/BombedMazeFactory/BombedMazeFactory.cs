@@ -9,7 +9,7 @@ namespace CreationalPatterns.AbstractFactory.BombedMazeFactory;
 /// </summary>
 public class BombedMazeFactory : MazeFactory
 {
-    public BombedMazeFactory() { }
+    // public BombedMazeFactory() { }
 
     public override IWall MakeWall()
         => new BombedWall();

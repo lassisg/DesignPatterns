@@ -8,7 +8,7 @@ namespace CreationalPatterns.AbstractFactory.EnchantedMazeFactory;
 /// </summary>
 public class EnchantedMazeFactory : MazeFactory
 {
-    public EnchantedMazeFactory() { }
+    // public EnchantedMazeFactory() { }
     
     public IRoom MakeRoom(int roomNumber) 
         => new EnchantedRoom(roomNumber, CastSpell());
