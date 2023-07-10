@@ -7,7 +7,7 @@ namespace CreationalPatterns.AbstractFactory;
 /// <para>Abstract Factory.</para>
 /// Declares an interface for operations that create abstract mazes (product objects).
 /// </summary>
-public class MazeFactory
+public class MazeFactory : IMazeFactory
 {
     public MazeFactory() { }
     
