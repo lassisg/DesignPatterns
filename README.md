@@ -22,4 +22,4 @@ I won't delete those, because they might be useful for comparison with the final
 
 ## Creational Patterns
 
-### Abstract Factory
+- [Abstract Factory](./CreationalPatterns/CreationalPatterns.md)
