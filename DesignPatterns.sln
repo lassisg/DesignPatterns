@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.App", "DesignPatterns.App\DesignPatterns.App.csproj", "{21FBE4C7-678C-4058-82F0-E72EAD22FF64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationalPatterns", "CreationalPatterns\CreationalPatterns.csproj", "{C8A97CF9-25D4-4BEA-ABE8-BEE7706BF0C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational", "DesignPatterns.Creational\DesignPatterns.Creational.csproj", "{C8A97CF9-25D4-4BEA-ABE8-BEE7706BF0C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralPatterns", "StructuralPatterns\StructuralPatterns.csproj", "{B45094EA-3A72-48E7-8D84-A7EE2015FB8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Structural", "DesignPatterns.Structural\DesignPatterns.Structural.csproj", "{B45094EA-3A72-48E7-8D84-A7EE2015FB8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralPatterns", "BehavioralPatterns\BehavioralPatterns.csproj", "{029F9496-41BB-4E30-B662-44A9F3CDD509}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Behavioral", "DesignPatterns.Behavioral\DesignPatterns.Behavioral.csproj", "{029F9496-41BB-4E30-B662-44A9F3CDD509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,7 @@
-using CreationalPatterns.AbstractFactory;
-using CreationalPatterns.AbstractFactory.BombedMazeFactory;
-using CreationalPatterns.AbstractFactory.EnchantedMazeFactory;
-using CreationalPatterns.BaseCode;
-using CreationalPatterns.Common.Interfaces;
+using DesignPatterns.Creational.AbstractFactory;
+using DesignPatterns.Creational.AbstractFactory.BombedMazeFactory;
+using DesignPatterns.Creational.AbstractFactory.EnchantedMazeFactory;
+using DesignPatterns.Creational.BaseCode;
 
 namespace DesignPatterns.App;
 
